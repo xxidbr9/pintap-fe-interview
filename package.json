@@ -26,5 +26,6 @@
         "node": ">=14.0.0"
     },
     "dependencies": {},
-    "private": true
+    "private": true,
+    "license": "MIT"
 }

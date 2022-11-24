@@ -1,15 +1,7 @@
 const TerserPlugin = require('terser-webpack-plugin')
-const { nanoid } = require('nanoid')
-
 const isDEV = process.env.NODE_ENV !== 'production'
 
-const buildID = nanoid()
-
-
 const config = {
-  generateBuildId: async () => {
-    return buildID
-  },
   images: {
     domains: [
       'i.dummyjson.com',
