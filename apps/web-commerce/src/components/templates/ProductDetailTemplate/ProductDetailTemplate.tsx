@@ -1,4 +1,4 @@
-import { ProductListEntity } from '@domain/product/entities/iProductList.entity'
+import { Product } from '@domain/product/entities/iProductList.entity'
 import Navbar from '@organisms/Navbar'
 import ProductSection from '@organisms/ProductSection'
 import { rdxCartActions } from '@rdxFeatures/cart'
@@ -39,7 +39,7 @@ const ProductDetailTemplate = (props: Props) => {
     }
     setIsDrawerOpen(true)
   }
-  const _handleCartProductClick = (product: ProductListEntity) => {
+  const _handleCartProductClick = (product: Product) => {
     setIsDrawerOpen(true)
     dispatch(rdxCartActions.setProductList(product))
   }

@@ -4,7 +4,7 @@ import { rdxProductSelector } from '.';
 import { rdxProductState } from './product.selector';
 import { rdxProductActions } from './product.slice';
 
-function* setSearchProductListSaga() {
+async function* setSearchProductListSaga() {
   const state = yield select(rdxProductState)
   const searchQuery = state.searchQuery
 

@@ -80,9 +80,9 @@ const HomeTemplate: React.FC<HomeTemplateProps> = () => {
     <React.Fragment>
       <Navbar drawerOpen={isDrawerOpen} onCartClick={_handleCartClick} onDrawerClose={_handleDrawerClose} />
 
-      <Container className="mt-4">
+      {/* <Container className="mt-4">
         <SearchInput placeholder='Find a product eg: IPhone' onChange={_handleSearch} />
-      </Container>
+      </Container> */}
       {isLoading && <Loader />}
       {!isLoading && (
         <ProductSection

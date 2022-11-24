@@ -89,7 +89,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data: product, otherProducts,
           </a>
           <div className='flex flex-col gap-y-4 relative z-20'>
             <span className='font-normal text-gray-600'>{moneyFormatter(product.price)}</span>
-            <button onClick={_handleAddToCart} className='flex justify-between p-3 border rounded bg-white active:scale-[.98] hover:border-black transition-all duration-50 ease-out'>
+            <button onClick={_handleAddToCart} className='flex justify-between p-3 border rounded bg-white active:scale-[.98] hover:border-black transition-all duration-50 ease-out' disabled={product.quantity >= product.stock}>
               <span className='font-medium'>{product.quantity > 0 ? "Add more" : "Add to cart"}</span>
               <Icon src={CartIcon} badge={product.quantity} />
             </button>

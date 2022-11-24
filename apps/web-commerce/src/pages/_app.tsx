@@ -1,3 +1,4 @@
+// @ts-nocheck
 import 'tailwindcss/tailwind.css'
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
@@ -34,7 +35,7 @@ import { screenAction } from '@rdxFeatures/screen'
 import { ScreenType } from '@utils/types/screen'
 import { PersistGate } from 'redux-persist/integration/react'
 import Loader from '@atoms/Loader'
-
+import styled from '@emotion/styled'
 
 
 /* Configuration Start */

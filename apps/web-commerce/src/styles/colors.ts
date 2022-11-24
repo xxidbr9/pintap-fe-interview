@@ -1,8 +1,7 @@
 import baseTailwind from '@base/tailwind.config'
 import resolveConfig from 'tailwindcss/resolveConfig'
-import { TailwindConfig } from 'tailwindcss/tailwind-config'
 
-const config: TailwindConfig = {
+const config = {
   ...baseTailwind,
   darkMode: "class",
 }
